@@ -42,6 +42,8 @@ async function createCallframe() {
 }
 
 async function createRoom() {
+  return { url: 'https://devlogs.daily.co/hello' };
+
   // This endpoint is using the proxy as outlined in netlify.toml
   const newRoomEndpoint = `${window.location.origin}/api/rooms`;
 
@@ -70,7 +72,6 @@ async function createRoom() {
 
   // Comment out the above and uncomment the below, using your own URL
   // if you prefer to test with a hardcoded room
-  return { url: 'https://devlogs.daily.co/hello' };
 }
 
 async function createRoomAndStart() {
