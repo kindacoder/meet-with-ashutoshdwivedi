@@ -80,13 +80,13 @@ async function createRoomAndStart() {
   const errorTitle = document.getElementById('error-title');
   const errorDescription = document.getElementById('error-description');
 
-  createAndStartButton.innerHTML = 'Loading...';
+  createAndStartButton.innerHTML = 'Starting...';
 
   room = await createRoom();
   if (!room) {
     errorTitle.innerHTML = 'Error creating room';
     errorDescription.innerHTML =
-      "If you're developing locally, please check the README instructions.";
+      "You can inform Ashutosh for the issue.";
     toggleMainInterface();
     toggleError();
   }
@@ -151,7 +151,7 @@ function toggleControls() {
 function toggleCallStyling() {
   const callWrapper = document.getElementById('wrapper');
   const createAndStartButton = document.getElementById('create-and-start');
-  createAndStartButton.innerHTML = 'Create room and start';
+  createAndStartButton.innerHTML = 'Join Again';
   callWrapper.classList.toggle('in-call');
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "prebuilt-ui",
   "version": "1.0.0",
-  "description": "demo of Daily's prebuilt UI for video calls",
+  "description": "Ashutosh Dwivedi's Video call Room",
   "scripts": {
     "prettify": "prettier --write \"./**/*.{js,css,html,md}\"",
     "dev": "http-server",
