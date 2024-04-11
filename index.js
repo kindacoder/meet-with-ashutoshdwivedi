@@ -70,7 +70,7 @@ async function createRoom() {
 
   // Comment out the above and uncomment the below, using your own URL
   // if you prefer to test with a hardcoded room
-  return { url: 'https://your-domain.daily.co/hello' };
+  return { url: 'https://devlogs.daily.co/hello' };
 }
 
 async function createRoomAndStart() {
